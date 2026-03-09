@@ -1,6 +1,6 @@
 # Polymarket Arbitrage Bot · Polymarket Trading Bot · Gabagool Fork
 
-**Polymarket arbitrage bot** and **Polymarket copytrading bot** for automated prediction-market trading. This repo is a **polymarket-arbitrage-gabagool-fork** — a TypeScript **Polymarket trading bot** that trades Polymarket’s 15-minute Up/Down markets (e.g. BTC, ETH) using the CLOB API, WebSocket orderbook, and an adaptive price predictor.
+**Polymarket arbitrage bot** and **Polymarket copytrading bot** for automated prediction-market trading. This **Polymarket trading bot** that trades Polymarket’s 15-minute Up/Down markets (e.g. BTC, ETH) using the CLOB API, WebSocket orderbook, and an adaptive price predictor.
 
 ---
 
