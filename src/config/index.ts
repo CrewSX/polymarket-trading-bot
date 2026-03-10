@@ -50,6 +50,13 @@ export const config = {
 
     /** Wallet private key (required for most scripts). Use config.requirePrivateKey() when needed. */
     privateKey: envString("PRIVATE_KEY"),
+    requirePrivateKey: () => {
+        if (config.bot.dryRun) {
+            throw new Error("PRIVATE_KEY is not required in DRY_RUN mode");
+        }
+        return requireEnv("PRIVATE_KEY");
+    },
+    privateKey: envString("PRIVATE_KEY"),
     requirePrivateKey: () => requireEnv("PRIVATE_KEY"),
 
     /** Use Polymarket proxy/smart wallet (set true only if you trade via proxy; default EOA) */
@@ -65,6 +72,23 @@ export const config = {
     negRisk: envBool("NEG_RISK", false),
 
     /** Bot runner settings */
+    bot: {
+        dryRun: envBool("DRY_RUN", false),
+        minUsdcBalance: envNumber("BOT_MIN_USDC_BALANCE", 1),
+        waitForNextMarketStart: envBool("COPYTRADE_WAIT_FOR_NEXT_MARKET_START", false),
+    },
+
+    /** Console file logging */
+    bot: {
+        dryRun: envBool("DRY_RUN", false),
+        minUsdcBalance: envNumber("BOT_MIN_USDC_BALANCE", 1),
+        waitForNextMarketStart: envBool("COPYTRADE_WAIT_FOR_NEXT_MARKET_START", false),
+    },
+    bot: {
+        dryRun: envBool("DRY_RUN", false),
+        minUsdcBalance: envNumber("BOT_MIN_USDC_BALANCE", 1),
+        waitForNextMarketStart: envBool("COPYTRADE_WAIT_FOR_NEXT_MARKET_START", false),
+    },
     bot: {
         minUsdcBalance: envNumber("BOT_MIN_USDC_BALANCE", 1),
         waitForNextMarketStart: envBool("COPYTRADE_WAIT_FOR_NEXT_MARKET_START", false),

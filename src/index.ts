@@ -46,6 +46,15 @@ async function waitMs(ms: number, label: string): Promise<void> {
 async function main() {
     logger.info("Starting the bot...");
 
+    // Dry-run mode: skip all initialization, just verify config loads
+    if (config.bot.dryRun) {
+        logger.info("DRY_RUN mode enabled - skipping all initialization");
+        logger.info(`Config loaded: chainId=${config.chainId}, clobApiUrl=${config.clobApiUrl}`);
+        logger.info(`Copytrade markets: ${config.copytrade.markets.join(", ")}`);
+        logger.info("Dry run complete - no trades will be executed");
+        return;
+    }
+
     // Create credentials if they don't exist
     const credential = await createCredential();
     if (credential) {
