@@ -22,12 +22,9 @@ If have any questions, contact here:  [Telegram](https://t.me/@crewsxdev).
 
 Bot logs from live runs: [logs](https://github.com/CrewSX/polymarket-arbitrage-copytrading-trading-bot/tree/main/logs).
 
-### Screenshots (bot in action)
+### Video of analytics for https://polymarket.com/@distinct-baguette
 
-| | |
-|---|---|
-| ![Bot log 1](./images/log1.png) | ![Bot log 2](./images/log2.png) |
-| ![Bot log 3](./images/log3.png) | ![Bot log 4](./images/log4.png) |
+[![Watch the bot in action](https://img.youtube.com/vi/bkdUOd0WjSA/hqdefault.jpg)](https://youtu.be/bkdUOd0WjSA)
 
 ---
 
