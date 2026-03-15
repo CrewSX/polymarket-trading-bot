@@ -24,7 +24,11 @@ Bot logs from live runs: [logs](https://github.com/CrewSX/polymarket-arbitrage-c
 
 ### Video of analytics for https://polymarket.com/@distinct-baguette
 
-[![Watch the bot in action](https://img.youtube.com/vi/bkdUOd0WjSA/hqdefault.jpg)](https://youtu.be/bkdUOd0WjSA)
+<!-- [![Watch the bot in action](https://img.youtube.com/vi/bkdUOd0WjSA/hqdefault.jpg)](https://youtu.be/bkdUOd0WjSA) -->
+<video width="100%" controls>
+  <source src="bagutee.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ---
 

@@ -1,0 +1,158 @@
+
+
+
+
+
+===== LOG START 2026-03-08T00:52:34.958Z pid=1696830 =====
+
+
+
+
+[2026-03-08T00:52:34.958Z] ℹ️ INFO  Starting the bot...
+2026-03-08T00:52:34.990Z  INFO  wallet address 0x68E4d69299527aF9217c8671960E62BCfBed94a4
+[CLOB Client] request error {"status":400,"statusText":"Bad Request","data":{"error":"Could not create api key"},"config":{"transitional":{"silentJSONParsing":true,"forcedJSONParsing":true,"clarifyTimeoutError":false},"transformRequest":[null],"transformResponse":[null],"timeout":0,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN","maxContentLength":-1,"maxBodyLength":-1,"env":{},"headers":{"Accept":"*/*","Content-Type":"application/json","POLY_ADDRESS":"0x68E4d69299527aF9217c8671960E62BCfBed94a4","POLY_SIGNATURE":"0x236dd28e186ca00a10ad0eeb015c0d51792d93f4fe5b1832cb4fcf4602750f0702571d1799c0bd4cc25060b82b14f4dfe7ede2bba8df7cd5d843b04f369b61e91b","POLY_TIMESTAMP":"1772931154","POLY_NONCE":"0","User-Agent":"@polymarket/clob-client","Connection":"keep-alive"},"method":"post","url":"https://clob.polymarket.com/auth/api-key","params":{}}}
+2026-03-08T00:52:35.221Z  INFO  Credential created successfully
+[2026-03-08T00:52:35.222Z] ℹ️ INFO  Credentials ready
+[2026-03-08T00:52:35.234Z] ℹ️ INFO  Approving USDC allowances to Polymarket contracts...
+2026-03-08T00:52:36.447Z  INFO  Approving USDC allowances for address: 0x68E4d69299527aF9217c8671960E62BCfBed94a4, chainId: 137
+2026-03-08T00:52:36.447Z  INFO  RPC: https://rpc-mainnet.matic.quiknode.pro
+2026-03-08T00:52:36.447Z  INFO  USDC Contract: 0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174
+2026-03-08T00:52:36.447Z  INFO  ConditionalTokens Contract: 0x4D97DCd97eC945f40cF65F87097ACe5EA0476045
+2026-03-08T00:52:36.447Z  INFO  Exchange Contract: 0x4bFb41d5B3570DeFd03C39a9A4D8dE6Bd8B8982E
+2026-03-08T00:52:36.868Z  INFO  ✅ USDC already approved for ConditionalTokens contract (MaxUint256)
+2026-03-08T00:52:37.080Z  INFO  ✅ USDC already approved for Exchange contract (MaxUint256)
+2026-03-08T00:52:37.297Z  INFO  ✅ ConditionalTokens already approved for Exchange contract
+2026-03-08T00:52:37.297Z  INFO  All allowances approved successfully!
+[2026-03-08T00:52:37.297Z] ℹ️ INFO  Syncing allowances with CLOB API...
+2026-03-08T00:52:37.297Z  INFO  Updating CLOB API balance allowance for USDC...
+2026-03-08T00:52:37.385Z  INFO  ✅ CLOB API balance allowance updated for USDC
+2026-03-08T00:52:37.653Z  INFO  ═══════════════════════════════════════
+2026-03-08T00:52:37.653Z  INFO  💰 WALLET BALANCE & ALLOWANCE
+2026-03-08T00:52:37.653Z  INFO  ═══════════════════════════════════════
+2026-03-08T00:52:37.653Z  INFO  USDC Balance: 2.811820
+2026-03-08T00:52:37.653Z  INFO  USDC Allowance: 0.000000
+2026-03-08T00:52:37.653Z  INFO  Available: 2.811820 (Balance: 2.811820, Allowance: 0.000000)
+2026-03-08T00:52:37.653Z  INFO  ═══════════════════════════════════════
+2026-03-08T00:52:37.653Z  INFO  USDC gate: available=2.811820 (balance=2.811820, allowance=0.000000), required>=1
+2026-03-08T00:52:37.653Z  INFO  USDC gate passed: available=2.811820 >= 1
+[2026-03-08T00:52:37.653Z] ℹ️ INFO  waitForMinimumUsdcBalance ==> ok=true available=2.81182 allowance=0 balance=2.81182
+[2026-03-08T00:52:37.653Z] ℹ️ INFO  Wallet is funded
+[2026-03-08T00:52:37.653Z] ℹ️ INFO  Skipping wait for next 15m market start (resume immediately from state)
+2026-03-08T00:52:37.654Z  INFO  Connecting to WebSocket: wss://ws-subscriptions-clob.polymarket.com/ws/market
+2026-03-08T00:52:37.772Z  INFO  WebSocket connected (market channel)
+2026-03-08T00:52:37.772Z  INFO  Subscribed to 0 token(s) for best_bid_ask updates (custom_feature_enabled: true)
+2026-03-08T00:52:37.772Z  INFO  WebSocket orderbook initialized
+2026-03-08T00:52:37.772Z  INFO  Starting CopytradeArbBot for markets: btc
+2026-03-08T00:52:37.772Z  INFO  Initializing market btc with slug btc-updown-15m-1772930700
+2026-03-08T00:52:37.867Z  INFO  Subscribed to 2 new token(s) (custom_feature_enabled: true)
+2026-03-08T00:52:38.435Z  INFO  📊 Up Ask ==========> 0.1190
+2026-03-08T00:52:38.436Z  INFO  📊 Down Ask 0.8890
+2026-03-08T00:52:39.452Z  INFO  📊 Up Ask ==========> 0.1190
+2026-03-08T00:52:39.452Z  INFO  📊 Down Ask 0.8900
+2026-03-08T00:52:39.470Z  INFO  📊 Up Ask ==========> 0.1190
+2026-03-08T00:52:39.470Z  INFO  📊 Down Ask 0.8890
+2026-03-08T00:52:40.519Z  INFO  📊 Up Ask ==========> 0.1190
+2026-03-08T00:52:40.519Z  INFO  📊 Down Ask 0.8900
+2026-03-08T00:52:40.527Z  INFO  📊 Up Ask ==========> 0.1190
+2026-03-08T00:52:40.527Z  INFO  📊 Down Ask 0.8890
+
+===== LOG END 2026-03-08T00:52:41.009Z pid=1696830 =====
+
+
+
+
+
+===== LOG START 2026-03-08T00:53:33.721Z pid=1737306 =====
+
+
+
+
+[2026-03-08T00:53:33.721Z] ℹ️ INFO  Starting the bot...
+2026-03-08T00:53:33.752Z  INFO  wallet address 0x68E4d69299527aF9217c8671960E62BCfBed94a4
+[CLOB Client] request error {"status":400,"statusText":"Bad Request","data":{"error":"Could not create api key"},"config":{"transitional":{"silentJSONParsing":true,"forcedJSONParsing":true,"clarifyTimeoutError":false},"transformRequest":[null],"transformResponse":[null],"timeout":0,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN","maxContentLength":-1,"maxBodyLength":-1,"env":{},"headers":{"Accept":"*/*","Content-Type":"application/json","POLY_ADDRESS":"0x68E4d69299527aF9217c8671960E62BCfBed94a4","POLY_SIGNATURE":"0x192fb22f63279bc95d3db54dd402a65bf366e22e6ddc7c27a9cc4b69857492fd17d455851ae358461d50560183f16819ddadb9955507db8351d6d84abda0cae51c","POLY_TIMESTAMP":"1772931213","POLY_NONCE":"0","User-Agent":"@polymarket/clob-client","Connection":"keep-alive"},"method":"post","url":"https://clob.polymarket.com/auth/api-key","params":{}}}
+2026-03-08T00:53:33.994Z  INFO  Credential created successfully
+[2026-03-08T00:53:33.994Z] ℹ️ INFO  Credentials ready
+[2026-03-08T00:53:34.005Z] ℹ️ INFO  Approving USDC allowances to Polymarket contracts...
+2026-03-08T00:53:34.996Z  INFO  Approving USDC allowances for address: 0x68E4d69299527aF9217c8671960E62BCfBed94a4, chainId: 137
+2026-03-08T00:53:34.996Z  INFO  RPC: https://rpc-mainnet.matic.quiknode.pro
+2026-03-08T00:53:34.996Z  INFO  USDC Contract: 0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174
+2026-03-08T00:53:34.996Z  INFO  ConditionalTokens Contract: 0x4D97DCd97eC945f40cF65F87097ACe5EA0476045
+2026-03-08T00:53:34.996Z  INFO  Exchange Contract: 0x4bFb41d5B3570DeFd03C39a9A4D8dE6Bd8B8982E
+2026-03-08T00:53:35.403Z  INFO  ✅ USDC already approved for ConditionalTokens contract (MaxUint256)
+2026-03-08T00:53:35.614Z  INFO  ✅ USDC already approved for Exchange contract (MaxUint256)
+2026-03-08T00:53:35.816Z  INFO  ✅ ConditionalTokens already approved for Exchange contract
+2026-03-08T00:53:35.816Z  INFO  All allowances approved successfully!
+[2026-03-08T00:53:35.816Z] ℹ️ INFO  Syncing allowances with CLOB API...
+2026-03-08T00:53:35.816Z  INFO  Updating CLOB API balance allowance for USDC...
+2026-03-08T00:53:35.894Z  INFO  ✅ CLOB API balance allowance updated for USDC
+2026-03-08T00:53:36.169Z  INFO  ═══════════════════════════════════════
+2026-03-08T00:53:36.169Z  INFO  💰 WALLET BALANCE & ALLOWANCE
+2026-03-08T00:53:36.169Z  INFO  ═══════════════════════════════════════
+2026-03-08T00:53:36.169Z  INFO  USDC Balance: 2.811820
+2026-03-08T00:53:36.169Z  INFO  USDC Allowance: 0.000000
+2026-03-08T00:53:36.170Z  INFO  Available: 2.811820 (Balance: 2.811820, Allowance: 0.000000)
+2026-03-08T00:53:36.170Z  INFO  ═══════════════════════════════════════
+2026-03-08T00:53:36.170Z  INFO  USDC gate: available=2.811820 (balance=2.811820, allowance=0.000000), required>=1
+2026-03-08T00:53:36.170Z  INFO  USDC gate passed: available=2.811820 >= 1
+[2026-03-08T00:53:36.170Z] ℹ️ INFO  waitForMinimumUsdcBalance ==> ok=true available=2.81182 allowance=0 balance=2.81182
+[2026-03-08T00:53:36.170Z] ℹ️ INFO  Wallet is funded
+[2026-03-08T00:53:36.170Z] ℹ️ INFO  Skipping wait for next 15m market start (resume immediately from state)
+2026-03-08T00:53:36.170Z  INFO  Connecting to WebSocket: wss://ws-subscriptions-clob.polymarket.com/ws/market
+2026-03-08T00:53:36.278Z  INFO  WebSocket connected (market channel)
+2026-03-08T00:53:36.278Z  INFO  Subscribed to 0 token(s) for best_bid_ask updates (custom_feature_enabled: true)
+2026-03-08T00:53:36.278Z  INFO  WebSocket orderbook initialized
+2026-03-08T00:53:36.278Z  INFO  Starting CopytradeArbBot for markets: btc
+2026-03-08T00:53:36.278Z  INFO  Initializing market btc with slug btc-updown-15m-1772930700
+2026-03-08T00:53:36.360Z  INFO  Subscribed to 2 new token(s) (custom_feature_enabled: true)
+2026-03-08T00:53:36.648Z  INFO  📊 Up Ask ==========> 0.0400
+2026-03-08T00:53:36.649Z  INFO  📊 Down Ask 0.9700
+2026-03-08T00:53:36.662Z  INFO  📊 Up Ask ==========> 0.0400
+2026-03-08T00:53:36.662Z  INFO  📊 Down Ask 0.9800
+2026-03-08T00:53:36.683Z  INFO  📊 Up Ask ==========> 0.0400
+2026-03-08T00:53:36.683Z  INFO  📊 Down Ask 0.9800
+2026-03-08T00:53:36.699Z  INFO  📊 Up Ask ==========> 0.0400
+2026-03-08T00:53:36.701Z  INFO  📊 Down Ask 0.9800
+2026-03-08T00:53:36.704Z  INFO  📊 Up Ask ==========> 0.0300
+2026-03-08T00:53:36.705Z  INFO  📊 Down Ask 0.9800
+2026-03-08T00:53:37.425Z  INFO  📊 Up Ask ==========> 0.0300
+2026-03-08T00:53:37.425Z  INFO  📊 Down Ask 0.9800
+2026-03-08T00:53:37.780Z  INFO  📊 Up Ask ==========> 0.0300
+2026-03-08T00:53:37.780Z  INFO  📊 Down Ask 0.9800
+2026-03-08T00:53:38.062Z  INFO  📊 Up Ask ==========> 0.0300
+2026-03-08T00:53:38.063Z  INFO  📊 Down Ask 0.9800
+2026-03-08T00:53:38.088Z  INFO  📊 Up Ask ==========> 0.0300
+2026-03-08T00:53:38.089Z  INFO  📊 Down Ask 0.9800
+2026-03-08T00:53:38.097Z  INFO  📊 Up Ask ==========> 0.0300
+2026-03-08T00:53:38.098Z  INFO  📊 Down Ask 0.9800
+2026-03-08T00:53:38.128Z  INFO  📊 Up Ask ==========> 0.0300
+2026-03-08T00:53:38.128Z  INFO  📊 Down Ask 0.9800
+2026-03-08T00:53:40.259Z  INFO  📊 Up Ask ==========> 0.0300
+2026-03-08T00:53:40.259Z  INFO  📊 Down Ask 0.9800
+2026-03-08T00:53:40.499Z  INFO  📊 Up Ask ==========> 0.0300
+2026-03-08T00:53:40.499Z  INFO  📊 Down Ask 0.9800
+2026-03-08T00:53:40.907Z  INFO  📊 Up Ask ==========> 0.0300
+2026-03-08T00:53:40.907Z  INFO  📊 Down Ask 0.9800
+2026-03-08T00:53:41.669Z  INFO  📊 Up Ask ==========> 0.0300
+2026-03-08T00:53:41.669Z  INFO  📊 Down Ask 0.9800
+2026-03-08T00:53:42.247Z  INFO  📊 Up Ask ==========> 0.0300
+2026-03-08T00:53:42.248Z  INFO  📊 Down Ask 0.9800
+2026-03-08T00:53:42.357Z  INFO  📊 Up Ask ==========> 0.0300
+2026-03-08T00:53:42.358Z  INFO  📊 Down Ask 0.9800
+2026-03-08T00:53:42.633Z  INFO  📊 Up Ask ==========> 0.0300
+2026-03-08T00:53:42.633Z  INFO  📊 Down Ask 0.9800
+2026-03-08T00:53:44.286Z  INFO  📊 Up Ask ==========> 0.0300
+2026-03-08T00:53:44.287Z  INFO  📊 Down Ask 0.9800
+2026-03-08T00:53:45.301Z  INFO  📊 Up Ask ==========> 0.0300
+2026-03-08T00:53:45.302Z  INFO  📊 Down Ask 0.9800
+2026-03-08T00:53:45.798Z  INFO  📊 Up Ask ==========> 0.0300
+2026-03-08T00:53:45.799Z  INFO  📊 Down Ask 0.9800
+2026-03-08T00:53:45.819Z  INFO  📊 Up Ask ==========> 0.0300
+2026-03-08T00:53:45.820Z  INFO  📊 Down Ask 0.9800
+2026-03-08T00:53:45.822Z  INFO  📊 Up Ask ==========> 0.0300
+2026-03-08T00:53:45.822Z  INFO  📊 Down Ask 0.9800
+2026-03-08T00:53:46.205Z  INFO  📊 Up Ask ==========> 0.0300
+2026-03-08T00:53:46.205Z  INFO  📊 Down Ask 0.9800
+2026-03-08T00:53:46.351Z  INFO  📊 Up Ask ==========> 0.0300
+2026-03-08T00:53:46.351Z  INFO  📊 Down Ask 0.9800
+
+===== LOG END 2026-03-08T00:53:46.438Z pid=1737306 =====
