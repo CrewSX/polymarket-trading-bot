@@ -24,7 +24,7 @@ Bot logs from live runs: [logs](https://github.com/CrewSX/polymarket-trading-bot
 
 ### Video of analytics for https://polymarket.com/@distinct-baguette
 
-[![Watch the video](bagutee-thumb.jpg)](https://github.com/CrewSX/polymarket-trading-bot/raw/main/bagutee.mp4)
+https://github.com/user-attachments/assets/b534ed0b-4d7f-46aa-851a-31abf609ee8b
 
 ---
 
