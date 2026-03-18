@@ -20,15 +20,11 @@ If have any questions, contact here:  [Telegram](https://t.me/@crewsxdev).
 
 ## Proof of work
 
-Bot logs from live runs: [logs](https://github.com/CrewSX/polymarket-arbitrage-copytrading-trading-bot/tree/main/logs).
+Bot logs from live runs: [logs](https://github.com/CrewSX/polymarket-trading-bot/tree/main/logs).
 
 ### Video of analytics for https://polymarket.com/@distinct-baguette
 
-<!-- [![Watch the bot in action](https://img.youtube.com/vi/bkdUOd0WjSA/hqdefault.jpg)](https://youtu.be/bkdUOd0WjSA) -->
-<video width="100%" controls>
-  <source src="bagutee.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+[![Watch the video](bagutee-thumb.jpg)](https://github.com/CrewSX/polymarket-trading-bot/raw/main/bagutee.mp4)
 
 ---
 
@@ -47,8 +43,8 @@ Bot logs from live runs: [logs](https://github.com/CrewSX/polymarket-arbitrage-c
 ## Install
 
 ```bash
-git clone https://github.com/XXX/polymarket-arbitrage-copytrading-trading-bot.git
-cd polymarket-arbitrage-copytrading-trading-bot
+git clone https://github.com/XXX/polymarket-trading-bot.git
+cd polymarket-trading-bot
 npm install
 ```
 
