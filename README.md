@@ -4,11 +4,6 @@
 
 ---
 
-## Keywords & topics (for search)
-
-`polymarket` · `polymarket arbitrage bot` · `polymarket trading bot` · `polymarket copytrading bot` · `polymarket-arbitrage-gabagool-fork` · `polymarket prediction market` · `polymarket CLOB` · `polymarket bot` · `gabagool` · `prediction market bot` · `Polymarket API`
-
----
 
 ## What this bot does
 
@@ -28,6 +23,38 @@ https://github.com/user-attachments/assets/b534ed0b-4d7f-46aa-851a-31abf609ee8b
 
 ---
 
+### Backtest Results
+
+```
+markets_count:     177
+markets_replayed:  177
+total_entries:     108
+total_dip_orders:  0
+total_risk_sells:  66
+skipped_no_pred:   0
+skipped_low_conf:  68
+skipped_no_entry:  0
+skipped_startup:   69
+total_pnl:         1938.00
+stats:             win_rate=23.73% avg_win=+46.14 avg_loss=+0.00 max_dd=0.00
+config:            {'order_size': 100.0, 'min_order_size': 5.0, 'ask_offset': 0.0, 'bid_offset': 0.0, 'max_spread': 0.02, 'immediate_buy_enabled': True, 'entry_buy_price': 0.6, 'delayed_entry_buy': 0.7, 'delay_seconds': 0.0, 'dip_buy_enabled': False, 'dip_buy_price': 0.7, 'risk_sell_enabled': True, 'risk_sell_price': 0.2, 'model_15m_path': 'prediction_15m/models/btc_15min_updown_lgbm.pkl', 'model_table': 'price_cache', 'model_limit_1s': 30000, 'min_signal_probability': 0.52, 'table': 'price_cache'}
+daily_stats:
+  date         markets  up  down   pnl       win_rate  avg_cost/market  total_cost
+  2026-03-18     93   81    12  +1070.00    24.73%            41.94      3900.00
+  2026-03-19     84   58    26   +868.00    22.62%            30.71      2580.00
+overall_cost_stats:
+  avg_cost_per_market: 36.61
+  total_cost:          6480.00
+  overall_win_rate:    23.73%
+  up_trades:           139
+  down_trades:         38
+  pnl_per_market:      +10.95
+
+*** TOTAL PNL: +1938.00 ***
+```
+
+---
+
 ## Overview
 
 - **Strategy**: Predict Up/Down from live orderbook via an adaptive price predictor; buy the predicted side at best ask (GTC), then place the opposite side at `0.98 − firstSidePrice` (GTC).
@@ -43,7 +70,7 @@ https://github.com/user-attachments/assets/b534ed0b-4d7f-46aa-851a-31abf609ee8b
 ## Install
 
 ```bash
-git clone https://github.com/XXX/polymarket-trading-bot.git
+git clone https://github.com/CrewSX/polymarket-trading-bot.git
 cd polymarket-trading-bot
 npm install
 ```
